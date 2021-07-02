@@ -83,11 +83,12 @@ firstname varchar(50),
 lastname varchar(50),
 email varchar(50),
 phone varchar(50),
+ zip int,
 );
 
 select * from person
 insert into Person values
-('Ramesh','das','ramesh@gmail.com','8734562798');
+('Ramesh','das','ramesh@gmail.com','8734562798','123456);
 alter table person drop column person_id
 alter table person add person_id int identity(1,1) primary key not null;
 
