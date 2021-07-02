@@ -72,6 +72,8 @@ select count(type),type from AddressBookDB group by type
 
 select * from AddressBookDB
 
+///useCase11
+
 
 insert into AddressBookDB values
 ('Nikita','Sharma','House no 212','Tinsukia','Assam',785575,'8748892361','nikita@gmail.com','book2','Friends');
@@ -83,11 +85,12 @@ firstname varchar(50),
 lastname varchar(50),
 email varchar(50),
 phone varchar(50),
+zip int,
 );
 
 select * from person
 insert into Person values
-('Ramesh','das','ramesh@gmail.com','8734562798');
+('Ramesh','das','ramesh@gmail.com','8734562798','123456');
 alter table person drop column person_id
 alter table person add person_id int identity(1,1) primary key not null;
 
